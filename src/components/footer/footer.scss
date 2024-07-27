@@ -1,0 +1,171 @@
+.footer {
+  margin-top: 150px;
+  height: 40vh;
+  padding: 40px 0px;
+  background-color: var(--footer-col);
+
+  .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      .left {
+        gap: 10px;
+
+        .name,
+        .position {
+          color: white;
+          font-weight: 400;
+        }
+      }
+      .mid {
+        ul {
+          display: flex;
+          gap: 10px;
+          font-family: var(--para-font);
+
+          li {
+            display: inline;
+            overflow: hidden;
+
+            a {
+              color: white;
+              font-size: var(--normal-font-size);
+
+              padding: 5px 10px;
+              transition: all 0.1s ease-out;
+
+              &:hover {
+                color: var(--faintest-col);
+              }
+            }
+          }
+        }
+      }
+      .right {
+        ul {
+          display: flex;
+          gap: 20px;
+          .uil2 {
+            color: white;
+          }
+          .uil2:hover {
+            color: var(--faintest-col);
+          }
+        }
+      }
+    }
+    .bottom {
+      margin-top: auto;
+      color: var(--faintest-col);
+    }
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 1230px) {
+  .footer {
+    .content {
+      padding-inline: 10px;
+
+    }
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 430px) {
+  .footer {
+    .content {
+      .mid {
+        ul {
+          li {
+            a {
+              font-size: var(--media-p-font-size);
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .footer {
+    height: fit-content;
+    padding: 40px 10px;
+    margin-top: 100px;
+    .content {
+      flex-direction: column;
+      gap: 30px;
+
+      .top {
+        gap: 30px;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+
+        .left {
+          .name {
+            font-size: var(--media-h1-font-size);
+          }
+          .position {
+            font-size: var(--media-p-font-size);
+          }
+        }
+
+        .mid {
+          ul {
+            li {
+              a {
+                font-size: var(--media-p-font-size);
+              }
+            }
+          }
+        }
+
+        .left {
+          gap: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .footer {
+    .content {
+      .mid {
+        ul {
+          li {
+            a {
+              font-size: var(--media-p-font-size);
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

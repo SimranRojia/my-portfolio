@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  flex-direction: column;
+ 
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+}
+
+@media screen and (max-width: 768px) {
+
+  .header {
+    .head {
+      font-size: var(--media-h1-font-size);
+    }
+    .intro {
+      font-size: var(--media-p-font-size);
+    }
+  }
+}
+
+
+
+
+@media screen and (max-width: 430px) {
+  .header {
+    .head {
+      font-size: var(--media-h1-font-size);
+    }
+    .intro {
+      font-size: var(--media-h6-font-size);
+    }
+  }
+}

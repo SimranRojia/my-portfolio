@@ -1,0 +1,14 @@
+.btn-prim{
+  z-index: -10;
+  
+    background-color: var(--prim-btn-col);
+    color:white;
+  }
+  
+  .btn-prim:hover{
+    background-color: var(--prim-hover-col);
+  }
+  .btn-prim:active{
+    background-color: var(--prim-active-col);
+  }
+  

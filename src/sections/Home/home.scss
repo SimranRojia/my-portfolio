@@ -1,0 +1,249 @@
+.Home {
+  height: calc(100vh - var(--header-height));
+  overflow: hidden;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--fainter-col);
+  position: relative;
+  .content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // flex-wrap: wrap-reverse;
+
+    .left {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      flex: 1;
+      gap: 50px;
+
+      .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        .head {
+          font-size: var(--h0-font-size);
+        }
+        .position {
+          color: var(--allh-col);
+          font-size: var(--h4-font-size);
+        }
+        .desc {
+          font-family: var(--para2-font);
+        }
+      }
+      .bottom {
+        display: flex;
+        flex-direction: column;
+
+        gap: 15px;
+
+        justify-content: flex-start;
+        .social {
+          display: flex;
+
+          ul {
+            display: flex;
+            gap: 20px;
+            i {
+              color: var(--black-col);
+            }
+
+            #uil-instagram-alt:hover {
+              -webkit-text-fill-color: var(--prim-btn-col);
+            }
+            .uil2:hover {
+              color: var(--prim-btn-col);
+            }
+          }
+        }
+
+        .buttons {
+          flex-wrap: wrap;
+          display: flex;
+          gap: 20px;
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+
+      .profile-img {
+        img {
+          object-fit: contain;
+          animation: moving 1s infinite alternate;
+
+          transform: translateY(0px);
+          width: 400px;
+          height:300px;
+
+        }
+      }
+    }
+  }
+}
+
+#typewriter {
+  color: var(--prim-active-col);
+}
+
+@media screen and (max-width: 768px) {
+  .Home {
+    min-height: calc(fit-content - var(--header-height));
+
+    height: fit-content;
+    width: 100%;
+    position: relative;
+
+    .content {
+      // flex-direction: column-reverse;
+      gap: 5px;
+      flex-direction: column-reverse;
+      justify-content: space-around;
+      .left {
+        flex: 0.8;
+
+        padding: 0px 5px;
+        .bottom {
+          .social {
+            .buttons {
+              flex-direction: column;
+            }
+          }
+        }
+        .details {
+          gap: 8px;
+
+          .head {
+            overflow: hidden;
+            line-height: 100%;
+            font-size: var(--media-h0-font-size);
+          }
+          .position {
+            font-size: var(--media-h4-font-size);
+          }
+
+          .desc {
+            font-size: var(--media-p-font-size);
+          }
+        }
+
+        .bottom {
+          margin-top: auto;
+
+          .buttons {
+            gap: 10px;
+          }
+        }
+      }
+      .right {
+        flex: none;
+        align-items: center;
+        justify-content: center;
+
+        .profile-img {
+          img {
+            width: 300px;
+            height: 200px;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes moving {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .Home {
+    height: calc(100vh - var(--header-height));
+    // height: fit-content;
+    width: 100%;
+    position: relative;
+
+    .content {
+      flex-direction: column-reverse;
+      gap: 0px;
+
+      .left {
+        padding: 0px 5px;
+        // margin-top: auto;
+        height: 100%;
+        gap: 20px;
+        .bottom {
+          margin-top: auto;
+          
+        }
+      }
+      .left .bottom .social .buttons {
+        display: none; /* Hide the social buttons */
+      }
+      .details{
+        overflow: auto;
+        gap: 20px; /* Increased gap for smaller screens */
+        padding: 10px; /* Add padding for better spacing */
+  }
+
+      
+      .details .head{
+        height: 60px;
+      
+        overflow: hidden;
+        line-height: 100%;
+      }
+      .details .position{
+        height: 60px;
+        overflow: hidden;
+        line-height: 100%;
+      }
+
+      .details .desc{
+        display: block;
+        max-height: fit-content;
+      }
+      .details .social{
+        overflow: hidden;
+        line-height: 100%;
+        display:none;
+        
+      }
+      .details .buttons{
+        padding-bottom: 100px;
+        height:5px;
+        display: none;
+
+      }
+      .bottom {
+        overflow-y: auto;
+        display: none;
+      }
+      .buttons{
+        display: none;
+      }
+      .right {
+        flex: none;
+        align-items: center;
+        justify-content: center;
+
+        .profile-img {
+          min-height: 255px;
+          img {
+            width: 100%;
+            height:200px;
+          }
+        }
+      }
+    }
+  }
+}

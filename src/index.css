@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Domine:wght@500&family=Geologica&family=Merriweather&family=Playfair+Display:wght@500&family=Poppins:wght@400;500&family=Roboto+Slab:wght@500&family=Salsa&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  --header-height: 4rem;
+  --hue-color: 250;
+
+  --text-col: hsl(250, 8%, 45%);
+
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
+  --small-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.33rem;
+  --normal-font-size: 1.125rem;
+
+  --prim-col: hsl(250, 69%, 61%);
+  --prim-btn-col: hsl(250, 69%, 61%);
+  --prim-hover-col: hsl(250, 90%, 65%);
+  --prim-active-col: hsl(250, 100%, 72%);
+  --prim-lighter-col: hsl(250, 92%, 85%);
+  --body-color: hsl(250, 60%, 99%);
+  --container-color: #fff;
+  --fainter-col: hsl(250deg 43% 97%);
+
+  --nav-active-col: rgb(0, 254, 76);
+
+  --footer-col: hsl(250, 69%, 61%);
+
+  --text-light-col: hsl(0, 0%, 42%);
+
+  --faintest-col: hsl(250deg 21.46% 90.18%);
+  --white-col: #fff;
+  --black-col: #000000;
+
+  --input-col: hsl(250, 70%, 96%);
+
+  --h1-col: #212121;
+  --btn-col: #212121;
+  --allh-col: hsl(250, 8%, 45%);
+  --para-col: hsl(250, 0%, 28%);
+
+  --h1-font: "Roboto Slab", serif;
+  --allh-font: "Merriweather", serif;
+  --para2-font: "Geologica", sans-serif;
+  --para-font: "Domine", sans-serif;
+  --h0-font-size: 2.6rem;
+  --h1-font-size: 2.5rem;
+  --h4-font-size: 1.5rem;
+  --h6-font-size: 1.2rem;
+  --p-font-size: 1.1rem;
+
+  --big-font-size: 2rem;
+
+  --uil-font-size: 1.35rem;
+  --uil2-font-size: 2.1rem;
+  --uil0-font-size: 2.6rem;
+  --btn-font-size: 1.33rem;
+
+  /* Media */
+
+  --media-h0-font-size: 1.6rem;
+  --media-h1-font-size: 1.5rem;
+  --media-h4-font-size: 1.1rem;
+
+  --media-h6-font-size: 0.95rem;
+  --media-p-font-size: 0.96rem;
+
+  --media-uil-font-size: 1rem;
+  --media-uil2-font-size: 1.5rem;
+  --media-uil0-font-size: 1.7rem;
+  --media-btn-font-size: 0.9rem;
+
+  --h1-wt:800;
+}
+
+* {
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  overflow: auto;
+}
+body {
+  background-color: var(--body-color);
+}
+
+body.dark-theme {
+  --body-color: hsl(250, 28%, 12%);
+  --container-color: hsl(250, 28%, 12%);
+
+  --fainter-col: hsl(0, 0%, 15%);
+
+  --text-light-col: hsl(0, 0%, 80%);
+
+  --white-col: #000000;
+  --black-col: #ffffff;
+
+  --footer-col: hsl(250, 28%, 19%);
+
+  --h1-col: hsl(250, 8%, 95%);
+
+  --para-col: hsl(250, 8%, 75%);
+
+  --prim-col: hsl(250, 30%, 8%);
+  --prim-hover-col: hsl(250, 57%, 53%);
+  --prim-active-col: hsl(250, 100%, 72%);
+  --prim-lighter-col: hsl(250, 92%, 85%);
+
+  --allh-col: hsl(250, 8%, 85%);
+
+  --faintest-col: hsl(250deg 21.46% 90.18%);
+
+  --input-col: hsl(250, 28%, 25%);
+  --h1-wt:500;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--allh-font);
+}
+h1 {
+  font-size: var(--h1-font-size);
+  color: var(--h1-col);
+  font-family: var(--h1-font);
+  font-weight: var(--h1-wt);
+  
+}
+h4 {
+  font-size: var(--h4-font-size);
+}
+
+h6 {
+  color: var(--allh-col);
+  font-size: var(--h6-font-size);
+}
+p {
+  color: var(--para-col);
+  font-family: var(--para-font);
+  font-size: var(--p-font-size);
+}
+
+a,
+Link {
+  cursor: pointer;
+  color: black;
+}
+
+li {
+  display: inline;
+}
+
+.uil {
+  font-size: var(--uil-font-size);
+  cursor: pointer;
+
+  text-align: center;
+}
+
+.uil2 {
+  font-size: var(--uil2-font-size);
+  cursor: pointer;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+  height: 100%;
+  /* background-color: var(--container-color); */
+}
+.flex {
+  display: flex;
+}
+.flexcol {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.hover-link {
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  gap: 10px;
+  cursor: pointer;
+
+  padding: 5px 15px 7px 15px;
+
+  border-radius: 4px;
+  font-family: var(--h1-font);
+  font-size: var(--btn-font-size);
+}
+
+@media screen and (max-width: 430px) {
+  .btn {
+    font-size: var(--media-h4-font-size);
+  }
+
+  .uil {
+    font-size: var(--media-uil-font-size);
+  }
+
+  .uil2 {
+    font-size: var(--media-uil2-font-size);
+  }
+}
