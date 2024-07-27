@@ -28,17 +28,22 @@ function Skills() {
         ]
       },
       {
-        heading: "App Developement",
-        desc: "1 months+ experience",
+        heading: "Languages",
+        desc: "12 months+ experience",
         icon:"uil2 uil-server skill-icons",
         reports: [
           {
-            title: "Flutter",
-            progress: "30%"
+            title: "Javascript",
+            progress: "60%"
           },
           {
-            title: "Dart",
-            progress: "20%"
+            title: "C++",
+            progress: "80%"
+
+          },
+          {
+            title: "  Python",
+            progress: "80%"
 
           }
         ]
