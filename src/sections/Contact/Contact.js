@@ -74,12 +74,12 @@ function Contact() {
                             <div className="each-mode hover-link">
                                 <i className="uil uil-envelope"></i>
                                 <h4 className="txt email-txt">Email</h4>
-                                <p className="email">ekanshbhushan@gmail.com</p>
+                                <p className="email">simranrojia@gmail.com</p>
                             </div>
                             <div className="each-mode hover-link">
                                 <i className="uil uil-map-marker"></i>
                                 <h4 className="txt location-txt">Location</h4>
-                                <p className="email">New-Delhi</p>
+                                <p className="email">Delhi Technological University</p>
                             </div>
                         </div>
                         <div className="right flex-col">
