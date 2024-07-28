@@ -264,7 +264,7 @@ function Home() {
                         "url": ""
                     },
                     "background": {
-                        "color": `${ darkTheme? "#191627" : "#fbfbfe"}`,
+                        "color": `${ darkTheme}`,
                         "image": "",
                         "position": "50% 50%",
                         "repeat": "no-repeat",
