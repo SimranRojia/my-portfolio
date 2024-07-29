@@ -3,7 +3,8 @@ import './project.scss';
 import SecHead from '../../components/secHead/SecHead';
 import EachProject from '../../components/Each-proj/EachProject';
 
-import skillopgif from '../../assets/skillop.gif'
+import skillopgif from '../../assets/skillop.gif';
+import doctorease from '../../assets/Doctorease.gif'
 
 import 'glider-js/glider.min.css';
 
@@ -58,6 +59,47 @@ function Project() {
                 head: "MongoDB",
                 logo: mongodb
             }
+            ]
+
+        },
+        {
+            title: "DoctorEase",
+            desc: "DoctorEase is a web application designed to facilitate online doctor consultations with a modern and user-friendly interface. Built with React.js, it offers a range of services like general checkups, psychological consulting, and post-surgery care. The platform features a clean design with appealing visuals and a responsive layout, ensuring an engaging user experience. Key components include an intuitive navigation bar, a detailed footer, and a streamlined contact form for user inquiries and feedback",
+            thumImg: doctorease,
+
+
+            // live: "https://skillop.in",
+            github :"https://github.com/SimranRojia/DoctorEase.git",
+       
+
+            stackUsed: [{
+                head: "React",
+                logo: react
+            },
+            // {
+            //     head: "Redux",
+            //     logo: redux
+            // },
+            {
+                head: "js",
+                logo: js
+            },
+            {
+                head: "css",
+                logo: css
+            },
+            // {
+            //     head: "Node-js",
+            //     logo: node
+            // },
+            // {
+            //     head: "Express-js",
+            //     logo: express
+            // },
+            // {
+            //     head: "MongoDB",
+            //     logo: mongodb
+            // }
             ]
 
         },

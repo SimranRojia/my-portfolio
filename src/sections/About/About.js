@@ -26,7 +26,7 @@ function About() {
                         <div className="details">
                             <div className="top">
                                 <span className="center" id="desc">
-                                Hello! I'm Simran Rojia, a tech enthusiast and undergraduate student pursuing Information Technology at Delhi Technological University (DTU). Passionate about leveraging technology to solve real-world problems, I actively engage in web development and AI/ML projects alongside my academic endeavors
+                                Hello! I'm Simran Rojia, a tech enthusiast and undergraduate student pursuing Information Technology at Delhi Technological University (DTU). Passionate about leveraging technology to solve real-world problems, I actively engage in web development and AI/ML projects alongside my academic endeavors.
 <br></br>  
 <br></br>                              
 My  Professional Journey<br/>
