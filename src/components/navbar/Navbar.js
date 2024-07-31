@@ -70,6 +70,7 @@ function Navbar() {
 
 
                         {/* <i onClick={handleTheme} id="dark-icon" className={`uil ${darkTheme ? "uil-sun" : "uil-moon"}`}></i> */}
+
                     </div>
 
 

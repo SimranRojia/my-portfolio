@@ -25,12 +25,12 @@ function App() {
 
 
 
-  if (darkTheme) {
+  useEffect(() => {
+   
     document.body.classList.add('dark-theme');
-  } else {
-
-    document.body.classList.remove('dark-theme');
-  }
+   
+    
+  }, []); 
 
 
   useEffect(() => {
