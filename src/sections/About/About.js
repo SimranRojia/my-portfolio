@@ -1,110 +1,103 @@
-import React from 'react'
-import './about.scss'
-import aboutpic from '../../assets/profilepicture1.png'
-import SecHead from '../../components/secHead/SecHead'
-import Primbtn from '../../components/Primary btn/Primbtn'
+import React from 'react';
+import './about.scss';
 
+const experiences = [
+  {
+    title: 'FullStack Developer',
+    company: 'Skillop',
+    tenure: 'Feb 2024-Present',
+    description: 'Developed and maintained scalable backend services using Node.js and Express, ensuring robust server-side functionality. Implemented and optimized MongoDB database solutions and collaborated closely with the frontend team.',
+  },
+  {
+    title: 'Co-Head',
+    company: 'Skillop',
+    tenure: 'April 2024-Present',
+    description: 'Lead the web development team, organizing tech events and skill workshops to enhance technical skills. Provide mentorship and training, fostering a collaborative environment for members to grow.',
+  },
+  {
+    title: 'Co-Founder & Backend Developer',
+    company: 'Moofli',
+    tenure: 'April 2024-Present',
+    description: 'Co-conceptualized and developed the MOOFLI platform. Built and managed a talented team, ensuring high-quality product delivery.',
+  },
+  {
+    title: 'FullStack Developer Intern',
+    company: 'Delhi Police',
+    tenure: 'March 2024-Present',
+    description: 'Developed the backend of the COP App, incorporating role-based access control to modernize police operations and improve coordination.',
+  },
+  {
+    title: 'Frontend Developer',
+    company: 'Resumify',
+    tenure: 'Dec 2023-Present',
+    description: 'Crafted intuitive and visually appealing user interfaces to enhance user experience, ensured the platform is fully responsive, providing a seamless experience across all devices.',
+  },
+];
 
+const achievements = [
+  {
+    title: 'Hackathon Participant | HackAI IIT Bombay',
+    date: 'Dec 2023',
+    description: 'Represented Skillop society (Formerly StartupX) at Techfest, IIT Bombay, securing 7th place in hackathon.Developed AIagent (resume segragator)for hiring processes in companies, overcoming challenges with guidance from Prof. Ranganath M. Singari.',
+  },
+  {
+    title: 'Hackathon Participant | VIHAAN Hive 2024',
+    date: 'Apr 2023',
+    description: 'Developed YOLO, an AI-driven healthcare platform that connects patients with doctors, utilizes blockchain for data security, and leverages Flask and MySQL for a secure and accessible healthcare solution in Viksit Bharat.',
+  },
+  {
+    title:"Hackathon Participant | IEEE YESIST'12 2024",
+    date: 'Mar 2023',
+    description: "Pitched Skillop, an experience-sharing platform that connects students with detailed insights into users' journeys, offers mentorship, and partners with Resumify to provide career-enhancing tools and features.",
+  },
+ 
+];
 
-function About() {
-    return (
-        <div id='scroll-about' data-aos="fade-up" className='About'>
-            <div className="container">
-                <div className="content">
+// Function to convert month-year string to a Date object
+const parseTenureDate = (tenure) => {
+  const [month, year] = tenure.split(' ')[0].split('-');
+  return new Date(`${year}-${month}-01`);
+};
 
-                    <SecHead subhead="My Introduction" head="About Me" />
+// Sort experiences by tenure date in descending order
+const sortedExperiences = experiences.sort((a, b) => parseTenureDate(b.tenure) - parseTenureDate(a.tenure));
 
-                    <div data-aos="zoom-in" className="mid">
-                        <div className="img">
-                            <img src={aboutpic} alt="" />
-
-                        </div>
-
-                    </div>
-                    <div className="bottom">
-
-                        <div className="details">
-                            <div className="top">
-                                <span className="center" id="desc">
-                                Hello! I'm Simran Rojia, a tech enthusiast and undergraduate student pursuing Information Technology at Delhi Technological University (DTU). Passionate about leveraging technology to solve real-world problems, I actively engage in web development and AI/ML projects alongside my academic endeavors.
-<br></br>  
-<br></br>                              
-My  Professional Journey<br/>
-As the Co-Founder at MOOFLI, I have led the development of a social platform dedicated to empowering self-expression and fostering meaningful connections. In my role as a Full-Stack Developer at Delhi Police, I developed the backend for the COP App, significantly enhancing foot patrol efficiency. As the Co-Head and Frontend Developer at SKILLOP, I have designed responsive, user-centric components and optimized functionalities. Additionally, as a Frontend Developer at Resumify, I have worked on enhancing job application success with innovative tools and templates.
-
-
-<br></br>
-<br></br>
-Skills & Expertise<br/>
-Programming Languages : Python, C++, C, Java, JavaScript, HTML, CSS<br/>
-Frameworks & Technologies: Flask, React, Node.js, Express.js, WebRTC<br/>
-Domains: Full Stack Web Development, Artificial Intelligence & Machine Learning<br/>
-Leadership & Management: Project Management, Team Leadership, Strategic Planning<br/><br/>
-Let's Connect<br/>
-I'm always eager to explore new opportunities and collaborations. Whether it's through professional connections or innovative projects, I believe in the power of technology to create positive change. Let's connect and embark on this exciting journey of innovation and growth together!
-
-
-
-                                </span>
-
-                            </div>
-
-                            <div className="count center">
-
-                                <div className="social">
-                                    <ul>
-                                        <li>
-                                            <a
-                                                target="_blank" rel="noreferrer"
-                                                href="https://github.com/SimranRojia"
-                                            >
-                                                <i className="uil2 fa-brands fa-github"></i>
-
-                                            </a>
-                                        </li>
-                                         <li>
-                                            <a target="_blank" rel="noreferrer"
-                                                href="https://www.linkedin.com/in/simran-rojia/">
-                                                <i className="uil2 fa-brands fa-linkedin"></i>
-
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a target="_blank" rel="noreferrer"
-                                                href="https://twitter.com/SimranRojia2284">
-                                                <i className={`uil2 fa-brands fa-twitter`}></i>
-
-                                            </a>
-                                        </li> 
-                                        <li>
-                                            <a target="_blank" rel="noreferrer"
-                                                href="https://www.instagram.com/srsly_simran">
-                                                <i
-                                                    className='uil2 fa-brands fa-instagram'
-
-                                                    id="uil-instagram-alt" aria-hidden="true"></i>
-
-                                            </a>
-                                        </li>
-                                    </ul>
-
-                                </div>
-
-                            </div>
-
-                            <a target='_blanck' href="https://drive.google.com/file/d/19NA-y1Fk3xCxPNEF-Htt-bgTwSiqw7uN/view?usp=sharing" className="buttons center">
-                                <Primbtn value="My Resume" icon={<i className="uil uil-download-alt"></i>} />
-                            </a>
-                        </div>
-
-                    </div>
-
-
-                </div>
+const About = () => {
+  return (
+    <div id="scroll-about" className="About">
+      <div className="experience-page">
+        <header className="experience-page__header">
+          <h1 className="experience-page__title">My Professional Journey</h1>
+          <h3 className="experience-page_subtitle">Experience</h3>
+        </header>
+        <section className="experience-page__content">
+          {sortedExperiences.map((experience, index) => (
+            <div className={`experience-page__item ${index % 2 === 0 ? 'left' : 'right'}`} key={index}>
+              <h2 className="experience-page__item-title">{experience.title}</h2>
+              <p className="experience-page__item-company">{experience.company}</p>
+              <p className="experience-page__item-tenure">{experience.tenure}</p>
+              <p className="experience-page__item-description">{experience.description}</p>
             </div>
-
+          ))}
+        </section>
+      </div>
+      <div className="achievements-flowchart">
+        <h2 className="achievements-flowchart__title">Achievements</h2>
+        <div className="achievements-flowchart__container">
+          {achievements.map((achievement, index) => (
+            <div className="achievements-flowchart__item" key={index}>
+              <div className="achievements-flowchart__date">{achievement.date}</div>
+              <div className="achievements-flowchart__content">
+                <h3 className="achievements-flowchart__item-title">{achievement.title}</h3>
+                <p className="achievements-flowchart__item-description">{achievement.description}</p>
+              </div>
+              {index < achievements.length - 1 }
+            </div>
+          ))}
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-export default About
+export default About;

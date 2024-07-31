@@ -22,6 +22,9 @@ function Skill(props) {
                     <p className="desc">
                         {props.content?.desc}
                     </p>
+                    <p className="points">
+                        {props.content?.points}
+                    </p>
                     <i className={`angle uil2 uil-angle-${active ? 'up':'down'}`}></i>
                     
 

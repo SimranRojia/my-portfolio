@@ -5,6 +5,7 @@ import EachProject from '../../components/Each-proj/EachProject';
 
 import skillopgif from '../../assets/skillop.gif';
 import doctorease from '../../assets/Doctorease.gif'
+import COP from '../../assets/COP.gif'
 
 import 'glider-js/glider.min.css';
 
@@ -20,7 +21,10 @@ import css from '../../assets/css.svg'
 
 
 
+
 function Project() {
+    
+    
     const projects = [
         {
             title: "Skillop",
@@ -45,6 +49,39 @@ function Project() {
             },
             {
                 head: "css",
+                logo: css
+            },
+            {
+                head: "Node-js",
+                logo: node
+            },
+            {
+                head: "Express-js",
+                logo: express
+            },
+            {
+                head: "MongoDB",
+                logo: mongodb
+            }
+            ]
+
+        },
+        {
+            title: "ConstableOnPatrol",
+            desc:`COP is designed specifically for the Delhi Police. It serves as a comprehensive tool for managing crime statistics and constable operations. The platform features a dynamic crime stats graph that visualizes crime trends and statistics over time. Users can easily enter and update crime details through a user-friendly interface. Additionally, COP allows for the efficient management of constable resources, including adding and removing constables, assigning them specific duties, and retrieving detailed information about constables in particular areas. This system is tailored to enhance the operational efficiency of the Delhi Police by streamlining data management and resource allocation.`,
+            thumImg: COP,
+
+            live: "delhicop.in",
+            // github: "https://github.com/Ekansh-Bhushan/HackAI_230344",
+
+
+            stackUsed: [{
+                head: "React",
+                logo: react
+            },
+            
+            {
+                head: "CSS",
                 logo: css
             },
             {
@@ -101,44 +138,10 @@ function Project() {
             //     logo: mongodb
             // }
             ]
+            
 
         },
-        // {
-        //     title: "CuRRENCY EXCHANGE MONITOR AND ALERT AGENT(using uagents)",
-        //     desc:`The project involves setting a base currency (EUR) and selecting foreign currencies for conversion. It connects to a real-time API for exchange rates, with a provided key and URL. Users input threshold values for selected currencies and store currency codes and names in a CSV file. The program compares user input with CSV data. It utilizes MySQL to store user details like email, username, password, and DOB. It sends prompt emails to users when exchange rates surpass thresholds. Additionally, it utilizes Uagents to run code at intervals, issuing alerts when thresholds are exceeded.`,
-        //     thumImg: kilogramgif,
-
-        //     live: "",
-        //     github: "https://github.com/Ekansh-Bhushan/HackAI_230344",
-
-
-        //     stackUsed: [{
-        //         head: "React",
-        //         logo: react
-        //     },
-        //     {
-        //         head: "Redux",
-        //         logo: redux
-        //     },
-        //     {
-        //         head: "Sass",
-        //         logo: scss
-        //     },
-        //     {
-        //         head: "Node-js",
-        //         logo: node
-        //     },
-        //     {
-        //         head: "Express-js",
-        //         logo: express
-        //     },
-        //     {
-        //         head: "MongoDB",
-        //         logo: mongodb
-        //     }
-        //     ]
-
-        // },
+        
         // {
         //     title: "How's the weather",
         //     desc: "Indulge in the epitome of weather exploration through our exceptional app. Powered by the dynamic trio of React and open source API \"Open Weather \", it offers unparalleled precision, immersive visuals, and seamless user engagement.",
@@ -171,7 +174,9 @@ function Project() {
 
 
     return (
+        <>
         <div id='scroll-proj' data-aos="fade-up" className='project'>
+            
             <div className="container">
                 <div className="content">
                     <SecHead head="My Projects" subhead="Most recent work" />
@@ -193,7 +198,7 @@ function Project() {
                 </div>
             </div>
         </div>
-
+        </>
 
     )
 }

@@ -54,7 +54,7 @@ function Navbar() {
                                 <Link duration={5} to='scroll-proj' smooth={true} offset={-70} activeClass='active' spy={true} className='projects'  >Projects</Link>
                             </li>
                             <li>
-                                <Link duration={5} to="scroll-about" smooth={true} offset={-70} activeClass='active' spy={true} className='about' >About</Link>
+                                <Link duration={5} to="scroll-about" smooth={true} offset={-70} activeClass='active' spy={true} className='about' >Experience</Link>
 
                             </li>
                             <li>
@@ -69,7 +69,7 @@ function Navbar() {
 
 
 
-                        <i onClick={handleTheme} id="dark-icon" className={`uil ${darkTheme ? "uil-sun" : "uil-moon"}`}></i>
+                        {/* <i onClick={handleTheme} id="dark-icon" className={`uil ${darkTheme ? "uil-sun" : "uil-moon"}`}></i> */}
                     </div>
 
 
