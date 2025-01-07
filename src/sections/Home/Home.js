@@ -345,7 +345,7 @@ function Home() {
                             </div>
 
                             <div className="buttons">
-                                <a target='_blanck' href="https://drive.google.com/file/d/1duLkSSGYzOWM6UBtDRyyzo2Fi-SgtUPg/view?usp=sharing" >
+                                <a target='_blanck' href="https://drive.google.com/file/d/1F61ikkgLRHcgJeFa0FMiKMbGWe9XJG3_/view?usp=sharing" >
 
                                     <Primbtn
                                         value="My Resume" icon={<i className="uil uil-bag"></i>} />
